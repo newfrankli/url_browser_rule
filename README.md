@@ -1,0 +1,2 @@
+# url_browser_rule
+输入url根据设定的规则选定指定的浏览器进行打开
