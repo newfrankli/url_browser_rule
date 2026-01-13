@@ -29,8 +29,15 @@ from PyQt5.QtCore import (
 # 安装命令：pip install PyQt5
 
 # 配置文件路径
-RULES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rules.json')
-CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.json')
+# 获取用户应用数据目录，确保配置文件持久保存
+APP_DATA_DIR = os.path.join(os.path.expanduser("~"), "AppData", "Local", "URLBrowserRule")
+# 确保目录存在
+os.makedirs(APP_DATA_DIR, exist_ok=True)
+
+# 使用应用数据目录保存配置文件
+RULES_FILE = os.path.join(APP_DATA_DIR, 'rules.json')
+CONFIG_FILE = os.path.join(APP_DATA_DIR, 'config.json')
+# 图标文件仍然使用当前目录
 ICON_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'url.ico')
 
 # 配置管理器类
