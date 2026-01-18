@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "pattern": "google.com",
+    "browser": "chrome",
+    "description": "Google使用Chrome"
+  },
+  {
+    "id": 2,
+    "pattern": "bing.com",
+    "browser": "firefox",
+    "description": "Bing使用Firefox"
+  },
+  {
+    "id": 3,
+    "pattern": "edge.microsoft.com",
+    "browser": "edge",
+    "description": "Edge官网使用Edge"
+  },
+  {
+    "id": 4,
+    "pattern": "x.com",
+    "browser": "chrome",
+    "description": "使用谷歌"
+  }
+]
